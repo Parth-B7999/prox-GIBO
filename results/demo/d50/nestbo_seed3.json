@@ -1,0 +1,27 @@
+{
+ "method": "nestbo",
+ "d": 50,
+ "seed": 3,
+ "runtime_s": 86748.44235992432,
+ "problem": {
+  "d": 50,
+  "s": 10,
+  "lam": 1.0,
+  "cond": 10.0,
+  "seed": 3
+ },
+ "noise_std": 0.01,
+ "budget": 1000,
+ "F0_gap": 26.686526571500565,
+ "final_gap": 3.8599812065292767,
+ "best_gap_of_iterates": 3.8599812065292767,
+ "final_f1_exact": 0.3333333333333333,
+ "final_nnz": 50,
+ "support_stable_from_iter": 0,
+ "n_iterations": 19,
+ "evals_to_tol": {
+  "0.1": null,
+  "0.01": null,
+  "0.001": null
+ }
+}

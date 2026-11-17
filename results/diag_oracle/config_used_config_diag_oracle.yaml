@@ -1,0 +1,32 @@
+budget: 1000
+dims:
+- 50
+- 100
+- 200
+methods:
+- oracle_margin_prox_gibo
+nestbo:
+  M: null
+  N_init: 10
+  delta: 0.2
+  raw_samples: 256
+noise_std: 0.01
+out_dir: results/diag_oracle
+problem:
+  cond: 10.0
+  hi: 1.0
+  lam: 1.0
+  lo: -1.0
+  s: 10
+seeds:
+- 0
+- 1
+- 2
+- 3
+- 4
+tolerances:
+- 0.1
+- 0.01
+- 0.001
+workers: 2
+x0_halfwidth: 0.5

@@ -1,0 +1,34 @@
+# third-party baseline repos (clone them yourself, see README)
+baselines/nest_bo/
+baselines/gibo/
+
+# python / OS
+__pycache__/
+*.pyc
+.DS_Store
+.pytest_cache/
+outputs/
+
+# local working notes (not part of the public repo)
+CLAUDE.md
+LCBO_NOTES.md
+RESULTS_DEMO.md
+report/ProxBO_explainer.*
+
+# raw per-iteration arrays and run logs (kept locally; per-run JSON summaries are tracked)
+results/**/*.npz
+*.log
+results/**/*.err
+results/_invalid_gp_init_bug/
+results/swimmer/_smoke_linesearch_stalls/
+# superseded by results/swimmer_v2 (v1 logged iterates only, no best-found metric)
+results/swimmer/
+results/demo/config_used_*.yaml
+
+# LaTeX build files
+report/*.aux
+report/*.bbl
+report/*.blg
+report/*.out
+report/*.toc
+report/*.synctex.gz

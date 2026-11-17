@@ -1,0 +1,26 @@
+# Demo experiment for the pitch: problem A (convex, known sparse optimum).
+# Deviations from the original Phase 2 spec, agreed after the smoke test (see RESULTS_DEMO.md):
+#   cond 100 -> 10   : with cond 100 even exact-gradient prox-gradient needs ~100 iterations
+#                      (>= 700 evals at 7 evals/iteration) and zeros appear only after ~50-70.
+#   lam 0.1 -> 1.0   : the GP gradient error at x* is ~0.03-0.1, i.e. as large as lam = 0.1, so
+#                      support identification was impossible; lam = 1 gives margin 0.2 * lam = 0.2.
+out_dir: results/demo
+problem:
+  s: 10
+  lam: 1.0
+  cond: 10.0
+  lo: -1.0
+  hi: 1.0
+dims: [50, 100]
+seeds: [0, 1, 2, 3, 4]       # problem instance seed = x0 seed offset = run seed
+x0_halfwidth: 0.5            # x0 ~ U(-0.5, 0.5)^d with rng seed 1000 + seed
+noise_std: 0.01
+budget: 1000
+methods: [gibo_paper]
+nestbo:                      # NeST-BO repo defaults for its synthetic benchmarks
+  M: null                    # null -> M = d (as in the repo's benchmark configs)
+  N_init: 10
+  delta: 0.2
+  raw_samples: 256
+workers: 2
+tolerances: [1.0e-1, 1.0e-2, 1.0e-3]

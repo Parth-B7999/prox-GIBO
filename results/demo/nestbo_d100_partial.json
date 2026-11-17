@@ -1,0 +1,8 @@
+{
+ "note": "NeST-BO d=100 runs (5 seeds) were stopped at 02:45 on 2026-11-15 after ~10 h: projected >40 more hours (cost per evaluation grows with N; 150-350 s/eval at stop). Their results were never written (the repo loop returns data only at the end). Values below are parsed from the tqdm progress bars in results/demo/run.log; bars cannot be mapped to seeds. y_min = best NOISY F value observed so far (not the iterate's value). F* over the 5 d=100 instances lies in [-8.28, -5.09]; F(x0) in [37.8, 47.1].",
+ "progress_bar_count_of_990": [295, 377, 385, 391, 395],
+ "evaluations_incl_10_init": [305, 387, 395, 401, 405],
+ "best_observed_F": [44.4, 25.3, 29.8, 30.5, 25.8],
+ "implied_best_observed_gap_range": [30.4, 52.7],
+ "identification_log": "results/nest_d100_identify.log"
+}

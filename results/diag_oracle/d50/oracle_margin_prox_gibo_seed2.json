@@ -1,0 +1,45 @@
+{
+ "method": "oracle_margin_prox_gibo",
+ "d": 50,
+ "seed": 2,
+ "runtime_s": 285.7023959159851,
+ "problem": {
+  "d": 50,
+  "s": 10,
+  "lam": 1.0,
+  "cond": 10.0,
+  "seed": 2
+ },
+ "noise_std": 0.01,
+ "budget": 1000,
+ "F0_gap": 28.114321230681707,
+ "final_gap": 0.0015401549382856317,
+ "best_gap_of_iterates": 0.0014837320369114337,
+ "final_f1_exact": 1.0,
+ "final_nnz": 10,
+ "support_stable_from_iter": 124,
+ "n_iterations": 143,
+ "evals_to_tol": {
+  "0.1": 161.0,
+  "0.01": 175.0,
+  "0.001": null
+ },
+ "method_cfg": {
+  "name": "oracle_margin_prox_gibo",
+  "model": "f",
+  "step": "prox",
+  "b1": 2,
+  "b2": 5,
+  "adaptive": false,
+  "eps": 0.1,
+  "delta_unit": 0.1,
+  "lr": 0.5,
+  "step_decay": false,
+  "window_mult": 2.0,
+  "hyper_every": 5,
+  "use_h_in_step": true,
+  "margin": true,
+  "kappa": 2.0,
+  "oracle_settle": true
+ }
+}

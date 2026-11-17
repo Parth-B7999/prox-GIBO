@@ -1,0 +1,44 @@
+{
+ "method": "margin_prox_gibo",
+ "d": 50,
+ "seed": 3,
+ "runtime_s": 124.8072943687439,
+ "problem": {
+  "d": 50,
+  "s": 10,
+  "lam": 1.0,
+  "cond": 10.0,
+  "seed": 3
+ },
+ "noise_std": 0.01,
+ "budget": 1000,
+ "F0_gap": 26.686526571500565,
+ "final_gap": 0.0029058489051720926,
+ "best_gap_of_iterates": 0.0015105491463387466,
+ "final_f1_exact": 1.0,
+ "final_nnz": 10,
+ "support_stable_from_iter": 121,
+ "n_iterations": 143,
+ "evals_to_tol": {
+  "0.1": 189.0,
+  "0.01": 287.0,
+  "0.001": null
+ },
+ "method_cfg": {
+  "name": "margin_prox_gibo",
+  "model": "f",
+  "step": "prox",
+  "b1": 2,
+  "b2": 5,
+  "adaptive": false,
+  "eps": 0.1,
+  "delta_unit": 0.1,
+  "lr": 0.5,
+  "step_decay": false,
+  "window_mult": 2.0,
+  "hyper_every": 5,
+  "use_h_in_step": true,
+  "margin": true,
+  "kappa": 2.0
+ }
+}

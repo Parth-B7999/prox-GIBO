@@ -1,0 +1,18 @@
+# Step 1 of the Newton follow-up: proximal Newton with the GP-mean Hessian (same acquisition and
+# step caps as prox_gibo / margin_prox_gibo), plus a true-Hessian diagnostic. Same instances,
+# x0, noise and budget as results/stress_cond100, so runs are paired by seed.
+out_dir: results/newton_cond100
+problem:
+  s: 10
+  lam: 1.0
+  cond: 100.0
+  lo: -1.0
+  hi: 1.0
+dims: [50]
+seeds: [0, 1, 2, 3, 4]
+x0_halfwidth: 0.5
+noise_std: 0.01
+budget: 1000
+methods: [prox_newton_gibo, margin_prox_newton_gibo, oracle_hess_margin_prox_newton_gibo]
+workers: 3
+tolerances: [1.0e-1, 1.0e-2, 1.0e-3]

@@ -1,0 +1,16 @@
+# Tested with Python 3.11 on CPU (macOS arm64).
+torch==2.6.0
+botorch==0.16.1
+gpytorch==1.14.3
+numpy
+scipy
+matplotlib
+pyyaml
+pytest
+# NeST-BO baseline (baselines/nest_bo) loop
+hydra-core>=1.3
+omegaconf
+# Swimmer case study
+gymnasium==1.1.0
+mujoco==3.3.7
+imageio

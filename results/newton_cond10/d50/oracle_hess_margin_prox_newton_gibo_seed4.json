@@ -1,0 +1,47 @@
+{
+ "method": "oracle_hess_margin_prox_newton_gibo",
+ "d": 50,
+ "seed": 4,
+ "runtime_s": 123.28817510604858,
+ "problem": {
+  "d": 50,
+  "s": 10,
+  "lam": 1.0,
+  "cond": 10.0,
+  "seed": 4
+ },
+ "noise_std": 0.01,
+ "budget": 1000,
+ "F0_gap": 27.945146014860597,
+ "final_gap": 0.0023384795643117684,
+ "best_gap_of_iterates": 0.0005672887679839533,
+ "final_f1_exact": 1.0,
+ "final_nnz": 10,
+ "support_stable_from_iter": 44,
+ "n_iterations": 143,
+ "evals_to_tol": {
+  "0.1": 182.0,
+  "0.01": 308.0,
+  "0.001": 371.0
+ },
+ "method_cfg": {
+  "name": "oracle_hess_margin_prox_newton_gibo",
+  "model": "f",
+  "step": "prox_newton",
+  "b1": 2,
+  "b2": 5,
+  "adaptive": false,
+  "eps": 0.1,
+  "delta_unit": 0.1,
+  "lr": 0.5,
+  "step_decay": false,
+  "window_mult": 2.0,
+  "hyper_every": 5,
+  "use_h_in_step": true,
+  "margin": true,
+  "kappa": 2.0,
+  "oracle_settle": false,
+  "hess_floor": 0.01,
+  "oracle_hess": true
+ }
+}

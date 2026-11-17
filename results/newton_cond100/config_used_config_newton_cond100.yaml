@@ -1,0 +1,27 @@
+budget: 1000
+dims:
+- 50
+methods:
+- prox_newton_gibo
+- margin_prox_newton_gibo
+- oracle_hess_margin_prox_newton_gibo
+noise_std: 0.01
+out_dir: results/newton_cond100
+problem:
+  cond: 100.0
+  hi: 1.0
+  lam: 1.0
+  lo: -1.0
+  s: 10
+seeds:
+- 0
+- 1
+- 2
+- 3
+- 4
+tolerances:
+- 0.1
+- 0.01
+- 0.001
+workers: 3
+x0_halfwidth: 0.5
